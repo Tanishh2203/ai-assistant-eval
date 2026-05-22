@@ -1,0 +1,145 @@
+Ollive AI - Company Overview & Product Documentation
+=====================================================
+
+Tagline: Don't just ship AI, insure it!
+
+What is Ollive?
+----------------
+Ollive is an AI liability insurance company. Their core product is AI Liability Insurance — a dedicated insurance policy designed specifically for companies that build and deploy AI systems. 
+
+The core problem Ollive solves: Enterprise buyers close faster when they trust your AI is covered. Traditional insurance policies (cyber, E&O) were not designed for AI-specific failures like hallucinations, algorithmic bias, copyright violations, or autonomous agent failures. Ollive provides the policy-backed proof enterprise buyers need.
+
+The Market Problem
+-------------------
+AI lawsuits grew 978% from 2021 to 2025. Over 700 active GenAI cases are in US courts today.
+
+In 2025, major insurers including AIG, Chubb, and WR Berkley introduced "absolute AI exclusions" — meaning standard cyber and E&O policies will no longer respond to AI-related claims. Courts are increasingly holding AI vendors (not just deployers) liable for their AI's outputs, including hallucinations, biased decisions, and IP violations.
+
+None of these risks are covered by existing standard policies. Ollive was built to fill this gap.
+
+Real-World AI Liability Cases That Ollive Covers
+-------------------------------------------------
+
+Air Canada (2024):
+Chatbot invented a bereavement fare policy and promised a refund that didn't exist. The BC Civil Resolution Tribunal held Air Canada liable for its AI's output. Cyber policies did not cover this.
+
+DoNotPay (2024):
+Marketed its AI as a "robot lawyer." The FTC disagreed and fined the company $193,000 for overstating what the AI could actually do. No existing policy was designed to cover AI-native misrepresentation claims.
+
+iTutorGroup (2023):
+AI hiring tool quietly rejected every applicant over 55. The EEOC sued. Settlement was $365,000. Standard employment practices policies were not designed for algorithmic discrimination.
+
+Workday (2024):
+Federal court ruled Workday can be sued as an "employment agency" because its AI screens candidates. The vendor — not just the employer — is now in the crosshairs. Class action is ongoing.
+
+Getty Images vs. Stability AI (Ongoing):
+Getty sued Stability AI for scraping 12 million licensed images to train its model. Exposure runs into the billions. Active in US and UK courts. No standard policy covers training data copyright risk.
+
+UnitedHealth (2024):
+AI flagged post-acute care claims for denial at a 90% rate, per Senate Finance Committee investigation. Multiple class actions followed. No AI-specific policy existed to address the liability.
+
+Zillow (2021):
+AI mispriced thousands of homes. The company took a $304 million write-down and shut down its entire iBuying business. No policy was designed to cover algorithmic pricing failure at this scale.
+
+Rite Aid (2023):
+Facial recognition AI falsely flagged customers as shoplifters — disproportionately Black and Asian shoppers. The FTC issued a five-year prohibition order. No coverage was in place for AI-driven regulatory proceedings.
+
+Authors Guild vs. OpenAI (2023):
+George R.R. Martin, John Grisham, and thousands of other writers sued OpenAI for training its models on their books without consent. Active litigation. Could reshape how AI companies manage training data liability.
+
+Samsung (2023):
+Engineers pasted proprietary source code and confidential meeting notes into ChatGPT. No policy addressed the AI-specific exposure of feeding sensitive data into a third-party model.
+
+ROSS Intelligence (2025):
+Built an AI legal research tool trained on Westlaw's content without a license. Thomson Reuters sued. ROSS shut down entirely in 2021. A federal court ruled against ROSS in February 2025 — the company didn't survive to see the verdict.
+
+Mata v. Avianca (2023):
+Two lawyers submitted a ChatGPT-written brief containing six completely fabricated case citations to a federal court. The judge fined them $5,000. Any AI legal tool whose output ends up in a filing faces the same downstream liability with no dedicated coverage.
+
+DPD (2024):
+After a routine model update, DPD's AI chatbot started swearing at customers and writing poems criticizing the company in live, public conversations. Output liability for deployers of third-party AI is not covered by cyber insurance.
+
+HireVue (2021):
+FTC received a formal complaint alleging HireVue's AI video interviewing tool — which scored candidates by analyzing facial expressions — was discriminatory and opaque. HireVue shut down the feature. Standard employment practices insurance was not designed to respond.
+
+What Ollive Covers
+-------------------
+Ollive's AI Liability Insurance provides dedicated coverage for the ways AI systems actually fail. The six coverage areas are:
+
+1. Hallucination & Output Liability
+Coverage for third-party claims arising from harmful, misleading, or factually incorrect AI outputs that cause financial or reputational harm. Includes legal defense, settlements, and customer claims. Example: An AI chatbot invents a policy or fact that causes a user financial harm.
+
+2. Algorithmic Bias & Discrimination
+Coverage for claims involving discriminatory outcomes from AI-driven decisions in hiring, lending, pricing, or access to services. Includes legal defense, settlements, and regulatory response. Example: An AI hiring tool rejects candidates based on age, race, or gender patterns in training data.
+
+3. Copyright & IP Claims
+Coverage for copyright, trade dress, and IP infringement claims arising from content your AI system generates for you or your customers. Includes IP defense and settlement costs. Real-world scenario: AI-generated marketing assets produced for a client closely resemble a competitor's copyrighted creative work. A lawsuit follows.
+
+4. AI Regulatory Investigations
+Coverage for AI-related regulatory proceedings, investigations, and enforcement actions under emerging AI laws and existing consumer protection frameworks. Includes defense costs, certain fines, and proceedings. Example: A regulator investigates your AI system for consumer protection violations.
+
+5. Sensitive Data Disclosure
+Coverage for unauthorized disclosure of confidential or regulated information through AI outputs, distinct from a traditional data breach event. Includes incident response, legal costs, and privacy claims. Example: An AI system surfaces private user data in its responses to other users.
+
+6. AI Incident Response
+First-party coverage for immediate operational response when an AI system misfires — forensic analysis, crisis communications, and remediation costs. Includes forensics, remediation, and crisis management.
+
+How Ollive Works as a Sales Advantage
+---------------------------------------
+Ollive positions its insurance not just as risk protection but as a competitive differentiator that helps AI vendors close enterprise deals faster.
+
+In the Proposal:
+Add "Covered by Ollive AI Liability Insurance" to your proposal or sales deck. It gives enterprise buyers confidence that your AI risks are backed by real coverage, not just internal policies or security claims.
+
+In the Contract:
+When procurement and legal teams ask about AI risk, you can point to an actual insurance policy. That makes conversations around liability, indemnification, and risk allocation much easier to navigate.
+
+In the Questionnaire:
+Vendor security and procurement questionnaires increasingly ask about AI-related liability and safeguards. Instead of lengthy explanations, you can share proof of coverage backed by a real policy number.
+
+Questions Enterprise Buyers Ask (and How Ollive Answers Them)
+--------------------------------------------------------------
+Question: "Do you carry insurance specifically covering AI output liability?"
+Without Ollive: Awkward pause, vague reassurance, legal review.
+With Ollive: "Yes. Here's the certificate."
+
+Question: "If your AI makes a biased decision affecting one of our employees, how are you covered?"
+Without Ollive: Refer to terms of service, escalate to legal, delay.
+With Ollive: "Covered. Here's the policy summary."
+
+Question: "What covers you if a regulator investigates your AI system?"
+Without Ollive: Nobody has a good answer.
+With Ollive: "Regulatory proceedings are explicitly included."
+
+How to Get Started with Ollive (The 3-Step Process)
+-----------------------------------------------------
+Step 1 - Apply:
+Tell Ollive about your AI — what you've built, who you sell to, how your system works. Short application in plain language. No actuarial deep-dives. Takes minutes.
+
+Step 2 - Get Covered:
+Policy documents and certificate of coverage arrive in your inbox within days, not weeks or quarters.
+
+Step 3 - Win:
+Your sales team puts the certificate in the next proposal. Walk into your enterprise meeting already covered. Your customer sees it, their legal team sees it, and you close faster than any competitor who can't say the same.
+
+Target Customers
+-----------------
+Ollive targets AI companies and AI product builders who sell to enterprise customers. Specifically:
+- Companies that build and deploy AI systems (chatbots, hiring tools, recommendation engines, content generators)
+- AI vendors going through enterprise procurement processes
+- Companies facing vendor security questionnaires with AI-related questions
+- Any AI company where a single AI mistake could cost more than the company's annual contract value (ACV)
+
+Why Existing Insurance Falls Short
+------------------------------------
+Cyber insurance: Designed for data breaches and network intrusions, not AI output errors or hallucinations.
+E&O (Errors & Omissions): Not designed for AI-native failures like algorithmic bias or training data copyright claims.
+Employment practices liability: Not designed for algorithmic discrimination in AI hiring tools.
+General liability: Does not address AI-specific regulatory proceedings or output liability.
+
+The gap: Courts are holding AI vendors liable. Regulators are acting. And the standard insurance market is adding AI exclusions, not coverage. Ollive exists to fill that gap with purpose-built AI liability coverage.
+
+Contact
+--------
+Website: ollive.ai
+To get started: Fill out the application form at ollive.ai with your full name, company, and work email.

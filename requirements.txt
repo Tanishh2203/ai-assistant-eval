@@ -1,0 +1,26 @@
+# ─────────────────────────────────────────────────────────────
+# Install everything:
+#   pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────
+
+# Telegram bot framework (async, v20+)
+python-telegram-bot
+
+# Anthropic SDK — Frontier bot + LLM-as-judge
+anthropic
+
+# HuggingFace — OSS model inference (Qwen2.5)
+huggingface-hub
+
+# RAG stack
+chromadb
+sentence-transformers
+# PDF ingestion
+pypdf
+
+# Env management
+python-dotenv
+
+# Evaluation visualisation
+matplotlib
+numpy==1.26.4

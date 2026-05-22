@@ -1,0 +1,150 @@
+Core AI & LLM Concepts Reference
+==================================
+
+Large Language Models (LLMs)
+------------------------------
+A Large Language Model (LLM) is a type of artificial intelligence model trained on vast amounts of text data to understand and generate human language. LLMs are based on the transformer architecture, introduced in the 2017 paper "Attention Is All You Need" by Vaswani et al. at Google. They work by predicting the next token in a sequence given all previous tokens.
+
+Well-known LLMs include GPT-4 (OpenAI), Claude (Anthropic), Gemini (Google), Llama (Meta), and Mistral (Mistral AI). LLMs are used for tasks like text generation, summarization, translation, question answering, code generation, and reasoning.
+
+Key characteristics of LLMs:
+- Parameters: The learnable weights in the model. More parameters generally means more capability but higher cost.
+- Context window: The maximum number of tokens the model can process at once. Modern models support 100K+ tokens.
+- Temperature: A parameter controlling randomness in outputs. Higher temperature = more creative/random. Lower = more deterministic.
+- Hallucination: When an LLM generates confident but incorrect or fabricated information.
+
+Retrieval-Augmented Generation (RAG)
+--------------------------------------
+Retrieval-Augmented Generation (RAG) is a technique that enhances LLM responses by retrieving relevant information from an external knowledge base before generating an answer.
+
+How RAG works:
+1. Indexing: Documents are chunked, embedded into vectors, and stored in a vector database.
+2. Retrieval: When a user asks a question, the question is embedded and the most similar chunks are retrieved from the database.
+3. Augmentation: The retrieved chunks are added to the LLM's prompt as context.
+4. Generation: The LLM generates an answer grounded in the retrieved context.
+
+Benefits of RAG:
+- Reduces hallucinations by grounding responses in real documents
+- Allows the model to access up-to-date or private information
+- More cost-effective than full fine-tuning
+- Transparent — you can cite sources
+
+Common RAG components:
+- Embedding model: Converts text to dense vectors (e.g., sentence-transformers, OpenAI embeddings)
+- Vector database: Stores and indexes embeddings (e.g., ChromaDB, Pinecone, Weaviate, Qdrant)
+- Chunking strategy: How documents are split (by sentence, paragraph, fixed tokens)
+- Retriever: Finds relevant chunks (dense retrieval, sparse BM25, or hybrid)
+
+Hallucination in LLMs
+-----------------------
+Hallucination refers to when a language model generates text that is factually incorrect, nonsensical, or not grounded in the provided context, but sounds plausible and confident.
+
+Types of hallucinations:
+- Factual hallucination: The model states incorrect facts (e.g., wrong dates, wrong names)
+- Contextual hallucination: The model contradicts or ignores information in the provided context
+- Intrinsic hallucination: The model generates contradictory statements within its own response
+
+Common causes of hallucination:
+- Training data gaps or noise
+- Overconfidence from RLHF (Reinforcement Learning from Human Feedback)
+- Ambiguous or misleading prompts
+- Information not present in the model's training data
+
+Mitigation strategies:
+- RAG (Retrieval-Augmented Generation)
+- Prompt engineering (e.g., "say I don't know if uncertain")
+- Self-consistency checking
+- Fine-tuning on factual datasets
+- Output verification with external tools
+
+Prompt Engineering
+-------------------
+Prompt engineering is the practice of crafting inputs (prompts) to language models to elicit desired outputs. Effective prompts can dramatically improve model performance without any training.
+
+Key prompt engineering techniques:
+- Zero-shot prompting: Asking the model directly without examples
+- Few-shot prompting: Providing examples of input-output pairs in the prompt
+- Chain-of-thought (CoT): Asking the model to "think step by step" before answering
+- System prompts: Instructions given at the start to define the model's persona and behavior
+- Role prompting: Telling the model to act as a specific expert
+- Structured output: Asking the model to respond in JSON, XML, or a specific format
+- RAG prompting: Including retrieved context in the prompt
+
+Fine-tuning vs RAG
+-------------------
+Fine-tuning involves training a pre-trained model on a custom dataset to adapt it to a specific task or domain. This modifies the model's weights.
+
+RAG keeps the base model unchanged but enhances it with retrieved context at inference time.
+
+When to use fine-tuning:
+- You need to change the model's tone, style, or format
+- You have a large, high-quality labeled dataset
+- You need very low latency (no retrieval step)
+- The task requires new reasoning capabilities
+
+When to use RAG:
+- Your knowledge base changes frequently
+- You need source citation and transparency
+- You have limited training data
+- You want lower cost compared to fine-tuning
+- You need to reduce hallucinations on specific facts
+
+Vector Databases
+-----------------
+A vector database stores and indexes high-dimensional vector embeddings, enabling fast similarity search. They are the backbone of RAG systems.
+
+Popular vector databases:
+- ChromaDB: Open-source, easy to embed in Python apps, great for prototyping
+- Pinecone: Fully managed cloud vector DB, highly scalable
+- Weaviate: Open-source with built-in ML models
+- Qdrant: High-performance open-source vector search
+- FAISS: Facebook AI Similarity Search — a library, not a full DB
+
+Key operations in vector DBs:
+- Upsert: Add or update vectors
+- Query: Find the N most similar vectors to a query vector
+- Filter: Combine vector search with metadata filtering
+
+AI Safety and Content Moderation
+----------------------------------
+AI safety refers to the field of ensuring AI systems behave in alignment with human values and intentions. Key concerns include:
+
+Jailbreaking: Attempts to bypass a model's safety guidelines through adversarial prompts. Common techniques include role-playing scenarios ("act as an evil AI"), hypothetical framings, or gradual escalation.
+
+Bias: LLMs can reflect and amplify biases present in training data, leading to unfair or discriminatory outputs regarding gender, race, religion, or other sensitive attributes.
+
+Guardrails: Techniques to prevent harmful model outputs:
+- System prompt instructions
+- Input/output classifiers (e.g., Llama Guard)
+- Constitutional AI (Anthropic's approach)
+- RLHF with safety-focused human feedback
+
+RLHF (Reinforcement Learning from Human Feedback): A training technique where human raters evaluate model outputs, and the model is optimized to produce outputs that humans prefer. Used to align models with human values.
+
+Transformer Architecture
+--------------------------
+The Transformer is the neural network architecture that underlies modern LLMs. It was introduced in 2017 by Google researchers. Key components:
+
+- Self-attention mechanism: Allows the model to weigh the importance of different tokens relative to each other
+- Multi-head attention: Multiple attention mechanisms operating in parallel
+- Feed-forward layers: Dense neural network layers applied after attention
+- Positional encoding: Injects information about token position in the sequence
+- Layer normalization: Stabilizes training
+
+The encoder-decoder architecture (original Transformer) is used for translation tasks. Decoder-only transformers (GPT-style) are used for text generation. Encoder-only transformers (BERT-style) are used for classification and embeddings.
+
+Tokens and Tokenization
+------------------------
+Tokenization is the process of splitting text into tokens — the basic units that LLMs process. Tokens are not the same as words. They can be whole words, subwords, punctuation, or whitespace.
+
+Common tokenizers:
+- Byte Pair Encoding (BPE): Used by GPT models
+- WordPiece: Used by BERT
+- SentencePiece: Used by LLaMA and many multilingual models
+
+Rule of thumb: 1 token ≈ 0.75 English words. "ChatGPT is great!" is approximately 6 tokens.
+
+Token counts matter because:
+- LLMs have a fixed context window (max tokens per request)
+- API pricing is based on tokens consumed
+- Longer prompts increase latency

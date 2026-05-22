@@ -1,0 +1,30 @@
+# Environment
+.env
+
+# ChromaDB data
+chroma_db/
+
+# Evaluation results (large files)
+evaluation/results/*.json
+evaluation/results/*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Temp files
+/tmp/
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+*.swp
